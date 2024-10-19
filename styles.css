@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#periodic-table {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.element {
+    background-color: #fff;
+    border: 2px solid #333;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.element:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.element .number {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.element .name {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.element .category {
+    font-size: 0.7em;
+    color: #999;
+    margin-top: 5px;
+}
+
+/* Category colors */
+.technical { background-color: #ffcccb; }
+.cultural { background-color: #c2e0c6; }
+.sports { background-color: #ffd700; }
+.social { background-color: #87cefa; }
+.academic { background-color: #dda0dd; }
